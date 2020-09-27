@@ -189,8 +189,10 @@ class DPlayer {
         this.template.mobilePlayButton.innerHTML = Icons.pause;
 
         // 在手机上，点击播放以后自动隐藏控制界面
-        if( utils.isMobile ) this.controller.hide();
-        
+        if (utils.isMobile) {
+            this.controller.hide();
+        }
+
         if (!fromNative) {
             const playedPromise = Promise.resolve(this.video.play());
             playedPromise
@@ -280,7 +282,7 @@ class DPlayer {
      * Toggle between play and pause
      */
     toggle() {
-        console.log( "in toggle" );
+        console.log('in toggle');
         if (this.video.paused) {
             this.play();
         } else {
