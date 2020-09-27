@@ -182,7 +182,7 @@
 
         &.dplayer-hide-controller {
             .dplayer-mobile-play {
-                display: none;
+                display: none!important;
             }
         }
 

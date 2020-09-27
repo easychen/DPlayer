@@ -327,6 +327,7 @@ class Controller {
             this.hide();
         } else {
             this.show();
+            // window.setTimeout( ()=>this.hide()  , 2000 );
         }
     }
 
